@@ -84,7 +84,7 @@ def show_page():
             with open(pdf_file_path, "rb") as pdf_file:
                 st.download_button(label="📄 활동지\n다운로드", data=pdf_file.read(), file_name="letter.pdf", mime="application/pdf", key="download_work")
         else:
-            st.button("📄 활동지\n(준비 중)", key="no_file_btn", disabled=True)
+            st.button("📄 활동지\n(준비 중)", key="no_file_btn", disabled=False)
         st.markdown('</div>', unsafe_allow_html=True)
 
     with c4:
